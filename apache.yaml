@@ -15,9 +15,10 @@
       register: result
       notify:
       - startservice
+    - debug: var=result
     handlers:
     - name: startservice
       service:
         name: httpd
         state: restarted
-    debug: var=result
+    
