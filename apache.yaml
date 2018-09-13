@@ -16,9 +16,9 @@
       notify:
       - startservice
     - debug: var=result
-    handlers:
-    - name: startservice
-      service:
-        name: httpd
-        state: restarted
+      handlers:
+      - name: startservice
+        service:
+          name: httpd
+          state: restarted
     
