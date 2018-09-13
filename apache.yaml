@@ -11,7 +11,8 @@
     - name: Install HTTPS server of nodes
       yum: 
         name: httpd
-        state: latest
+        state: absent
+      register: result
       notify:
       - startservice
     handlers:
@@ -19,3 +20,4 @@
       service:
         name: httpd
         state: restarted
+    debug: var=result
