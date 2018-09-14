@@ -6,4 +6,3 @@
     yum: 
       name: lynx
       state: installed
-      updated_cache: true
