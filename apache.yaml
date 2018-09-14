@@ -11,7 +11,7 @@
     - name: Install HTTPS server of nodes
       yum: 
         name: httpd
-        state: absent
+        state: installed
       register: result
       notify:
       - startservice
