@@ -5,4 +5,4 @@
   - name: Install Lynx on App Servers
     yum: 
       name: lynx
-      state: installed
+      state: absent
