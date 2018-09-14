@@ -1,4 +1,8 @@
 - hosts: dev
+  become: yes
+  become_method: sudo
+  connection: ssh
+  gather_facts: yes
   vars_files: 
   - vars.yaml
   tasks:
